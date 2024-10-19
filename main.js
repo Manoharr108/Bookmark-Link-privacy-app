@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express');
 const app = express();
 const router = require("./routes/link-route")
@@ -17,7 +18,7 @@ app.get('/:id', (req, res) => {
     res.sendFile(path.join(__dirname, './public/password.html'));
 });
 
-mongoose.connect("mongodb+srv://manohar2004gr:5DFpcNwqPVvyLaww@testapi.unppitm.mongodb.net/?retryWrites=true&w=majority&appName=TestApi")
+mongoose.connect(process.env.MONGO_URL)
     .then(() => {
         console.log("Successfully connected to DB!");
         app.listen(3000, () => {
