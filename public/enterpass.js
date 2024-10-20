@@ -16,8 +16,14 @@ document.addEventListener("DOMContentLoaded",()=>{
             });
             if(res){
                 let data = await res.json();
-                console.log(data.link)
+                if(data.message!="I'm getting it successfully!"){
+                    document.getElementById("passvalue").value = ''
+                     return alert("incorrect password!")
+                }
                 window.location.href = data.link;
+            }
+            else{
+                console.log("password incorrect")
             }
         }
         catch(err){
