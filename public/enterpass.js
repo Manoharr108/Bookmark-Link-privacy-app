@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         const id = pathname.split("/").pop();
         let res;
         try{
-            res = await fetch(`http://localhost:3000/${id}`,{
+            res = await fetch(`/${id}`,{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"

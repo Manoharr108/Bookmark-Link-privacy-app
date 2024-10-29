@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         e.preventDefault();
         let res, data;
         if(document.getElementById("linkaddress").value){
-            res = await fetch("http://localhost:3000",{
+            res = await fetch("/",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
