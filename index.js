@@ -18,7 +18,7 @@ app.get('/:id', (req, res) => {
     res.sendFile(path.join(__dirname, './public/password.html'));
 });
 
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect("mongodb+srv://manohar2004gr:5DFpcNwqPVvyLaww@testapi.unppitm.mongodb.net/?retryWrites=true&w=majority&appName=TestApi")
     .then(() => {
         console.log("Successfully connected to DB!");
         app.listen(3000, () => {
