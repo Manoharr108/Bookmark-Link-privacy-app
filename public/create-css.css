@@ -1,0 +1,36 @@
+.container{
+    margin-top: 105px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#create-btn{
+    width: 100%;
+}
+form{
+    padding: 19px;
+}
+.linkdiv{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input{
+    width: 19rem;
+    padding: 5px;
+}
+
+.linkprovider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#redirect-btn{
+    margin-top: 5px;
+}

@@ -27,6 +27,8 @@ document.addEventListener("DOMContentLoaded",()=>{
             // <button onclick="copyfunction('${address.value}')">Copy</button>
             // `
             let btn = document.createElement("button")
+            btn.classList.add('btn')
+            btn.classList.add('btn-primary')
             btn.innerText = "Copy"
 
 
@@ -38,7 +40,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             tooltip.style.color = "#fff";
             tooltip.style.padding = "5px";
             tooltip.style.borderRadius = "4px";
-            tooltip.style.marginLeft = "54px";  
+            tooltip.style.marginLeft = "27rem";  
             tooltip.style.fontSize = "12px";
             tooltip.style.transition = "visibility 0.2s ease";
 
