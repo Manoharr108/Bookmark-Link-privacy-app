@@ -18,8 +18,9 @@ document.addEventListener("DOMContentLoaded",()=>{
                 let data = await res.json();
                 if(data.message!="I'm getting it successfully!"){
                     document.getElementById("passvalue").value = ''
-                     return alert("incorrect password!")
+                    document.getElementById("info").value = "Incorrect password! Access Denied"
                 }
+                  document.getElementById("info").value = ""
                 window.location.href = data.link;
             }
             else{
