@@ -13,7 +13,7 @@ exports.CreateLink = async(req, res)=>{
             LinkId:random
         })
         await newlink.save()
-        return res.status(201).json({message:"Successfully added a new link!", newlink, newLink:`http://localhost:3000/${random}`})
+        return res.status(201).json({message:"Successfully added a new link!", newlink, newLink:`https://link-protector.vercel.app/${random}`})
     }
     catch(error){
         return res.status(500).json({message:error.message})
