@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         e.preventDefault();
         let res, data;
         if(document.getElementById("linkaddress").value){
-            res = await fetch("/",{
+            res = await fetch("https://link-protector.vercel.app",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
