@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended:false}))
 
 app.use('/',router)
 
-app.get('/Linkprotector', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './public/create.html'));
 });
 
